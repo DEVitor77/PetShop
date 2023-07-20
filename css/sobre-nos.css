@@ -1,0 +1,49 @@
+/*
+    Break Points
+
+    576px
+    768px
+    922px
+    1200px
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container-responsive {
+    width: 100%;
+    padding: 0 20px;
+    /* margin: auto; */
+    background-color: blue;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colunas {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+@media screen and (min-width: 768px) {
+    .colunas {
+        width: 50%;
+        border: 1px solid #000000;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .colunas {
+        width: 25%;
+        border: 1px solid #000000;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
